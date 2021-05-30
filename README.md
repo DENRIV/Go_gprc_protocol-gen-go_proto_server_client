@@ -39,42 +39,42 @@ go get -u -v github.com/golang/protobuf/protoc-gen-go
 
 ├───main
 
-│        client.go
+│ ..... client.go
 
-│        server.go
+│ .....  server.go
 
 │
 
 ├───makefile
 
-│        makefile
+│ .....   makefile
 
 │
 
 └───proto
 
-        toupper.proto
+  .....  toupper.proto
         
 [Compile]
 protoc -I proto toupper.proto --go_out=plugins=grpc:proto
 
 ├───main
 
-│         client.go
+│ .....   client.go
 
-│        server.go
+│ .....  server.go
 
 │
 
 ├───makefile
 
-│        makefile
+│ .....   makefile
 
 │
 
 └───proto
 
-        toupper.pb.go
+ .....  toupper.pb.go
         
         toupper.proto
 
